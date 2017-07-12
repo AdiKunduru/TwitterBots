@@ -2,7 +2,7 @@
   "name": "npm_demo",
   "version": "1.0.0",
   "description": "Demonstrating npm for twitter bot",
-  "main": "bot.js",
+  "main": "jaymavsbot.js",
   "scripts": {
     "test": "node jaymavsbots.js"
   },
