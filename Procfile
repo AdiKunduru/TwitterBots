@@ -1,1 +1,1 @@
-web: node jaymavsbot.js
+worker: node jaymavsbot.js
