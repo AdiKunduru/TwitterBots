@@ -31,8 +31,8 @@ function watchForTweet(jayTweet)
 {
 var replyID = jayTweet.id_str//toString();
 var whatToSay = "@" + jayTweet.user.screen_name + " Mavs Suck"
-//if(jayTweet.user.screen_name === "jappaji4")
-if(jayTweet.user.screen_name !== "sethchade")
+
+if(jayTweet.user.screen_name !== "AdityaNelakonda")
 {
   tweet(whatToSay,replyID);
 }
