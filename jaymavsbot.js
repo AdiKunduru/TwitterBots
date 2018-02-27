@@ -1,5 +1,4 @@
-//var juice = "juice";
-//console.log(juice);
+
 
 var twit = require("twit");
 //var config = require("./config");
@@ -8,28 +7,21 @@ var T = new twit({
 //your API KEYS
 });
 
-var jayID = "jappaji4"
-var myID = "sethchade"
-var rodID = "roddy97"
-var rudraID = "pinchhitter11"
+var myID = "AdiNelakonda"
 
-//?????????????????????????
-//Stream needs to be following the right user account
 var stream = T.stream('statuses/filter',{
-   follow : 614668900
+   follow : //TwitterID of a user
  });
 
-//Tried to run for every tweet ever made. Needs to run for new tweets.
-// Needs to respond to
 stream.on("tweet", watchForTweet)
 
 // Be notified when he is tweeting Get Tweet ID. status.id
-function watchForTweet(jayTweet)
+function watchForTweet(userTweet)
 {
-var replyID = jayTweet.id_str//toString();
-var whatToSay = "@" + jayTweet.user.screen_name + " Mavs Suck"
+var replyID = userTweet.id_str//toString();
+var whatToSay = "@" + userTweet.user.screen_name + " Good tweet "
 
-if(jayTweet.user.screen_name !== "AdityaNelakonda")
+if(userTweet.user.screen_name !== myID)
 {
   tweet(whatToSay,replyID);
 }
